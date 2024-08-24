@@ -328,6 +328,7 @@ margin-top: 90px; /* Adjust for desired offset */
     }
     
     .text-content {
+        align-items: center;
         margin-left: 0;
         padding: 20px;
     }
