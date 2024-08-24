@@ -212,6 +212,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 margin: 60px 0;
+margin-bottom: 200px;
 }
 
 .showcase-grid {
@@ -255,89 +256,6 @@ margin-top: 60px; /* Adjust for desired offset */
 
 .showcase-image:nth-child(4) img {
 margin-top: 90px; /* Adjust for desired offset */
-}
-
-.showcase-text {
-text-align: center;
-max-width: 600px;
-margin-top: 150px;
-}
-
-.showcase-text h2 {
-font-size: 28px;
-font-weight: bold;
-margin-bottom: 10px;
-}
-
-.showcase-text .heart {
-color: red;
-}
-
-.showcase-text p {
-font-size: 16px;
-color: #555;
-}
-
-.showcase-text .client-name {
-font-weight: bold;
-color: #777;
-}
-
-.middle-text-section {
-    align-items: center;
-    text-align: center;
-    margin: 70px;
-}
-
-.destinations-section {
-    text-align: center;
-    margin: 60px 0;
-}
-
-.destinations-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.destinations-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.destination-item {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.destination-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 2px solid #f09c00;
-}
-
-.destination-info {
-    padding: 15px;
-}
-
-.destination-info h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.destination-info p {
-    font-size: 16px;
-    color: #7e7e7e;
-}
-
-.destination-item:hover {
-    transform: scale(1.05);
 }
 
 .ticket-sales-section {
@@ -427,9 +345,6 @@ color: #777;
         position: relative;
     }
 
-    .middle-text-section {
-        display: none !important;
-    }
     .showcase-section {
         display: none !important;
     }
@@ -447,15 +362,6 @@ color: #777;
 
     .showcase-image:first-child {
         display: block; /* Show only the first image */
-    }
-
-    .destinations-grid {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .destination-item {
-        max-width: 100%;
     }
 
     .ticket-sales-content {
