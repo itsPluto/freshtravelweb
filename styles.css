@@ -326,7 +326,7 @@ main {
   font-weight: bold; /* Bold text */
   color: #333; /* Adjust text color as needed */
   text-transform: uppercase; /* Make text uppercase */
-  animation: scrollText 60s linear infinite; /* Slower speed for smooth scrolling */
+  animation: scrollText 200s linear infinite; /* Slower speed for smooth scrolling */
 }
 
 /* Fade effect on the left side */
