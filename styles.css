@@ -310,6 +310,60 @@ margin-top: 90px; /* Adjust for desired offset */
     max-width: 500px;
 }
 
+/* Main container */
+.scroll-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 50px; /* Adjust based on text size */
+  }
+  
+  /* Scrolling text content */
+  .scroll-content {
+    display: flex;
+    white-space: nowrap;
+    font-size: 2em; /* Larger text */
+    font-weight: bold; /* Bold text */
+    color: #333; /* Adjust text color as needed */
+    text-transform: uppercase; /* Make text uppercase */
+    animation: scrollText 30s linear infinite; /* Slower speed for smooth scrolling */
+  }
+  
+  /* Fade effect on the left side */
+  .fade-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to right, white, transparent);
+    pointer-events: none;
+  }
+  
+  /* Fade effect on the right side */
+  .fade-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: linear-gradient(to left, white, transparent);
+    pointer-events: none;
+  }
+  
+  /* Continuous text scrolling animation */
+  @keyframes scrollText {
+    0% {
+      transform: translateX(0);  /* Start from the beginning */
+    }
+    100% {
+      transform: translateX(-100%); /* Move to the end, including the duplicate */
+    }
+  }
+  
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
