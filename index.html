@@ -77,63 +77,54 @@
     <div class="scroll-container">
       <div class="scroll-content">
         <p>
-          London - Paris - Frankfurt - Amsterdam - Madrid - Munich - Rome -
-          Zurich - Istanbul - Barcelona - Vienna - Lisbon - Brussels -
-          Copenhagen - Milan - Stockholm - Dublin - Oslo - Helsinki - Warsaw -
-          Athens - Prague - Budapest - Geneva - Hamburg - Berlin - Venice -
-          Manchester - Lyon - Marseille - Edinburgh - Birmingham - Nice -
-          Düsseldorf - Bucharest - Sofia - Riga - Belgrade - Zagreb - Porto -
-          Tallinn
+          Frankfurt - Munich - Berlin - Hamburg - Zurich - Geneva - Basel - Rome
+          - Milan - Venice - Florence - Naples - London - Paris - Amsterdam -
+          Madrid - Barcelona - Vienna - Lisbon - Brussels - Copenhagen -
+          Stockholm - Dublin - Oslo - Helsinki - Warsaw - Athens - Prague -
+          Budapest - Lyon - Marseille - Edinburgh - Nice - Düsseldorf -
+          Bucharest - Sofia - Riga - Zagreb - Porto - Tallinn - Tirana -
+          Pristina - Istanbul - Antalya - Ankara - Thessaloniki - Sarajevo -
+          Skopje - Vienna - Malmo - Bucharest - Lisbon - Athens
         </p>
         <p>
-          London - Paris - Frankfurt - Amsterdam - Madrid - Munich - Rome -
-          Zurich - Istanbul - Barcelona - Vienna - Lisbon - Brussels -
-          Copenhagen - Milan - Stockholm - Dublin - Oslo - Helsinki - Warsaw -
-          Athens - Prague - Budapest - Geneva - Hamburg - Berlin - Venice -
-          Manchester - Lyon - Marseille - Edinburgh - Birmingham - Nice -
-          Düsseldorf - Bucharest - Sofia - Riga - Belgrade - Zagreb - Porto -
-          Tallinn
+          Frankfurt - Munich - Berlin - Hamburg - Zurich - Geneva - Basel - Rome
+          - Milan - Venice - Florence - Naples - London - Paris - Amsterdam -
+          Madrid - Barcelona - Vienna - Lisbon - Brussels - Copenhagen -
+          Stockholm - Dublin - Oslo - Helsinki - Warsaw - Athens - Prague -
+          Budapest - Lyon - Marseille - Edinburgh - Nice - Düsseldorf -
+          Bucharest - Sofia - Riga - Zagreb - Porto - Tallinn - Tirana -
+          Pristina - Istanbul - Antalya - Ankara - Thessaloniki - Sarajevo -
+          Skopje - Vienna - Malmo - Bucharest - Lisbon - Athens
         </p>
         <p>
-          London - Paris - Frankfurt - Amsterdam - Madrid - Munich - Rome -
-          Zurich - Istanbul - Barcelona - Vienna - Lisbon - Brussels -
-          Copenhagen - Milan - Stockholm - Dublin - Oslo - Helsinki - Warsaw -
-          Athens - Prague - Budapest - Geneva - Hamburg - Berlin - Venice -
-          Manchester - Lyon - Marseille - Edinburgh - Birmingham - Nice -
-          Düsseldorf - Bucharest - Sofia - Riga - Belgrade - Zagreb - Porto -
-          Tallinn
-        </p>
-        <p>
-          London - Paris - Frankfurt - Amsterdam - Madrid - Munich - Rome -
-          Zurich - Istanbul - Barcelona - Vienna - Lisbon - Brussels -
-          Copenhagen - Milan - Stockholm - Dublin - Oslo - Helsinki - Warsaw -
-          Athens - Prague - Budapest - Geneva - Hamburg - Berlin - Venice -
-          Manchester - Lyon - Marseille - Edinburgh - Birmingham - Nice -
-          Düsseldorf - Bucharest - Sofia - Riga - Belgrade - Zagreb - Porto -
-          Tallinn
-        </p>
-        <p>
-          London - Paris - Frankfurt - Amsterdam - Madrid - Munich - Rome -
-          Zurich - Istanbul - Barcelona - Vienna - Lisbon - Brussels -
-          Copenhagen - Milan - Stockholm - Dublin - Oslo - Helsinki - Warsaw -
-          Athens - Prague - Budapest - Geneva - Hamburg - Berlin - Venice -
-          Manchester - Lyon - Marseille - Edinburgh - Birmingham - Nice -
-          Düsseldorf - Bucharest - Sofia - Riga - Belgrade - Zagreb - Porto -
-          Tallinn
-        </p>
-        <p>
-          London - Paris - Frankfurt - Amsterdam - Madrid - Munich - Rome -
-          Zurich - Istanbul - Barcelona - Vienna - Lisbon - Brussels -
-          Copenhagen - Milan - Stockholm - Dublin - Oslo - Helsinki - Warsaw -
-          Athens - Prague - Budapest - Geneva - Hamburg - Berlin - Venice -
-          Manchester - Lyon - Marseille - Edinburgh - Birmingham - Nice -
-          Düsseldorf - Bucharest - Sofia - Riga - Belgrade - Zagreb - Porto -
-          Tallinn
+          Frankfurt - Munich - Berlin - Hamburg - Zurich - Geneva - Basel - Rome
+          - Milan - Venice - Florence - Naples - London - Paris - Amsterdam -
+          Madrid - Barcelona - Vienna - Lisbon - Brussels - Copenhagen -
+          Stockholm - Dublin - Oslo - Helsinki - Warsaw - Athens - Prague -
+          Budapest - Lyon - Marseille - Edinburgh - Nice - Düsseldorf -
+          Bucharest - Sofia - Riga - Zagreb - Porto - Tallinn - Tirana -
+          Pristina - Istanbul - Antalya - Ankara - Thessaloniki - Sarajevo -
+          Skopje - Vienna - Malmo - Bucharest - Lisbon - Athens
         </p>
       </div>
       <div class="fade-left"></div>
       <div class="fade-right"></div>
     </div>
+    <script>
+      document
+        .querySelector(".scroll-content")
+        .addEventListener("mouseover", () => {
+          document.querySelector(".scroll-content").style.animationPlayState =
+            "paused";
+        });
+
+      document
+        .querySelector(".scroll-content")
+        .addEventListener("mouseout", () => {
+          document.querySelector(".scroll-content").style.animationPlayState =
+            "running";
+        });
+    </script>
 
     <section class="showcase-section" data-aos="fade-up">
       <div class="showcase-grid">
