@@ -40,7 +40,7 @@ nav ul {
 
 main {
   display: flex;
-  height: 100vh;
+  height: 40vh;
   overflow: hidden;
 }
 
@@ -120,8 +120,7 @@ main {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: brightness(0.9);
-  border-radius: 15px;
+  border-radius: 50px 0 0 50px;
 }
 
 .footer {
@@ -318,6 +317,7 @@ main {
   display: flex;
   align-items: center;
   height: 50px; /* Adjust based on text size */
+  margin-top: 50px; /* Add margin above the scrolling text*/
 }
 
 /* Scrolling text content */
@@ -336,7 +336,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50px;
+  width: 100px;
   height: 100%;
   background: linear-gradient(to right, white, transparent);
   pointer-events: none;
@@ -347,7 +347,7 @@ main {
   position: absolute;
   top: 0;
   right: 0;
-  width: 50px;
+  width: 100px;
   height: 100%;
   background: linear-gradient(to left, white, transparent);
   pointer-events: none;
