@@ -309,26 +309,36 @@ main {
   max-width: 500px;
 }
 
-/* Main container */
-.scroll-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
+.stock-ticker {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1); /* Add drop shadow */
+  background-color: #f7f7f7;
   height: 50px; /* Adjust based on text size */
   margin-top: 50px; /* Add margin above the scrolling text*/
-}
-
-/* Scrolling text content */
-.scroll-content {
-  display: flex;
-  white-space: nowrap;
   font-size: 2em; /* Larger text */
   font-weight: bold; /* Bold text */
   color: #333; /* Adjust text color as needed */
   text-transform: uppercase; /* Make text uppercase */
-  animation: scrollText 200s linear infinite; /* Slower speed for smooth scrolling */
+  padding: 8px 0; /* Add vertical padding */
+  overflow: hidden; /* Hide overflowing content */
+  user-select: none; /* Prevent text selection */
+  --gap: 20px; /* Define a gap between items */
+  display: flex; /* Use flexbox layout */
+  gap: var(--gap); /* Apply the defined gap */
+}
+
+.stock-ticker ul {
+  list-style: none; /* Remove default list styles */
+  flex-shrink: 0; /* Prevent flex items from shrinking */
+  min-width: 100%; /* Ensure each list takes up full width */
+  display: flex; /* Use flexbox layout for the list items */
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Align items vertically */
+  gap: var(--gap); /* Apply the defined gap */
+  animation: scroll 50s linear infinite; /* Apply scrolling animation */
+}
+
+.stock-ticker:hover ul {
+  animation-play-state: paused; /* Pause animation on hover */
 }
 
 /* Fade effect on the left side */
@@ -353,13 +363,11 @@ main {
   pointer-events: none;
 }
 
-/* Continuous text scrolling animation */
-@keyframes scrollText {
-  0% {
-    transform: translateX(0); /* Start from the beginning */
-  }
-  100% {
-    transform: translateX(-100%); /* Move to the end, including the duplicate */
+@keyframes scroll {
+  to {
+    transform: translateX(
+      calc(-100% - var(--gap))
+    ); /* Move content horizontally */
   }
 }
 
@@ -407,29 +415,6 @@ main {
 
   .image-content img {
     border-radius: 30px 30px 10px 10px;
-  }
-
-  /* Main container */
-  .scroll-container {
-    height: 50px; /* Adjust based on text size */
-    margin-top: 3%; /* Add margin above the scrolling text*/
-  }
-
-  /* Scrolling text content */
-  .scroll-content {
-    font-size: 1.4em; /* Larger text */
-    text-transform: none; /* Make text uppercase */
-    animation: scrollText 300s linear infinite; /* Slower speed for smooth scrolling */
-  }
-
-  /* Fade effect on the left side */
-  .fade-left {
-    width: 20px;
-  }
-
-  /* Fade effect on the right side */
-  .fade-right {
-    width: 20px;
   }
 
   .ticket-sales-section {
